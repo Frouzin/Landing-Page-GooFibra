@@ -276,3 +276,67 @@ footer {
 .footer-section i {
     margin-right: 10px;
 }
+
+/* Estilos responsivos */
+
+/* Para tablets e dispositivos móveis */
+@media (max-width: 768px) {
+    .intro {
+        padding: 80px 10px;
+        text-align: center;
+    }
+    
+    .intro-text {
+        padding: 0 20px;
+    }
+
+    .intro h1 {
+        font-size: 28px;
+    }
+
+    .intro p {
+        font-size: 18px;
+    }
+
+    .plans {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+    }
+}
+
+/* Para dispositivos móveis pequenos */
+@media (max-width: 480px) {
+    .intro h1 {
+        font-size: 24px;
+    }
+
+    .intro p {
+        font-size: 16px;
+    }
+
+    .plans-title {
+        font-size: 28px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .contact form {
+        padding: 0 10px;
+    }
+}
