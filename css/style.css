@@ -10,7 +10,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #333;
+    background-color: #333333;
     color: #fff;
 }
 
@@ -50,11 +50,17 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 .intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #000;
+    color: #FFA500; /* Cor alaranjada */
     padding: 50px 20px;
-    text-align: center;
 }
 
+.intro-text {
+    text-align: left;
+}
 
 .intro-content {
     max-width: 800px;
@@ -62,13 +68,52 @@ nav ul li a:hover {
 }
 
 .intro h1 {
-    font-size: 36px;
-    color: #FFA500; /* Cor alaranjada */
     margin: 0;
+    font-size: 36px;
+    font-weight: bold;
 }
 
 .intro p {
-    font-size: 18px;
-    color: #FFF;
     margin: 10px 0 0;
+    font-size: 20px;
+    color: #FFF; /* Cor branca para o slogan */
+}
+.intro-image {
+    max-width: 400px; /* Ajuste conforme necessário */
+}
+.plans {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #000000;
+}
+
+.card {
+    background-color: #d3700d;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 50px;
+    margin: 10px;
+    text-align: center;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.card .price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #080808;
+    margin: 10px 0;
+}
+
+.card .description {
+    font-size: 16px;
+    color: #080808;
 }
