@@ -13,7 +13,9 @@ header {
     background-color: #ab7302;
     color: #fff;
 }
-
+.background{
+    width: 100%;
+}
 .logo img {
     height: 50px;
 }
@@ -51,15 +53,45 @@ nav ul li a:hover {
 }
 .intro {
     display: flex;
-    justify-content: center;
+    position: relative;
+    justify-content: space-between;
     align-items: center;
-    background-color: #000;
+    background-image: url('/img/pexels-alteredsnaps-14482085.jpg');
+    background-size:cover;
+    background-position: center;
+    padding: 100px 20px;
     color: #FFA500; /* Cor alaranjada */
-    padding: 50px 20px;
-}
-
-.intro-text {
     text-align: left;
+}
+.intro::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Fundo preto com 50% de opacidade */
+    z-index: 0;
+}
+.intro-btn {
+    margin-top: 20px;
+    margin-left: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #0c0c0c;
+    background-color: #c56c00;
+    border: 3px #0a0a0a;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.intro-btn:hover {
+    background-color: #f19320;
+}
+.intro-text {
+    position: relative;
+    z-index: 1;
 }
 
 .intro-content {
@@ -68,23 +100,35 @@ nav ul li a:hover {
 }
 
 .intro h1 {
-    margin: 0;
-    font-size: 36px;
+    margin: 20px;
+    font-size: 58px;
     font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra do texto */
 }
 
 .intro p {
-    margin: 10px 0 0;
+    margin: 10px 20px 0;
     font-size: 20px;
     color: #FFF; /* Cor branca para o slogan */
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 3); /* Sombra do texto */
 }
 .intro-image {
     max-width: 400px; /* Ajuste conforme necessário */
 }
+.plans-title-container {
+    text-align: center;
+    background-color: #000; /* Fundo preto */
+    padding: 20px 0;
+}
+.plans-title {
+    font-size: 36px;
+    color: #FFA500; /* Cor laranja */
+    margin-bottom: 20px;
+}
 .plans {
     display: flex;
     justify-content: space-around;
-    padding: 20px;
+    padding: 50px;
     background-color: #000000;
 }
 
@@ -103,7 +147,7 @@ nav ul li a:hover {
     margin: 0;
     font-size: 24px;
     font-weight: bold;
-    color: #333;
+    color: #000000;
 }
 
 .card .price {
@@ -131,5 +175,65 @@ nav ul li a:hover {
 }
 
 .contact-btn:hover {
+    background-color: #0056b3;
+}
+
+.contact-btn:hover {
+    background-color: #0056b3;
+}
+
+.contact {
+    background-image: url('/img/pexels-jeshoots-218863.jpg');
+    background-size:cover;
+    background-position: center;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #010101;
+    font-weight: bold;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.contact button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
     background-color: #0056b3;
 }
