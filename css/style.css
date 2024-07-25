@@ -10,7 +10,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #333333;
+    background-color: #ab7302;
     color: #fff;
 }
 
@@ -116,4 +116,20 @@ nav ul li a:hover {
 .card .description {
     font-size: 16px;
     color: #080808;
+}
+.contact-btn {
+    margin-top: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #0c0c0c;
+    background-color: #ff8c00;
+    border: 3px #0a0a0a;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #0056b3;
 }
