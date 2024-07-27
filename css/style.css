@@ -183,17 +183,25 @@ nav ul li a:hover {
 }
 
 .contact {
-    background-image: url('/img/pexels-jeshoots-218863.jpg');
+    background-image: url('/img/pexels-junior-teixeira-1064069-2047905.jpg');
     background-size:cover;
     background-position: center;
     padding: 50px 20px;
     text-align: center;
 }
-
+.contac::after{
+    content: '';
+    position:relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.2); /* Fundo preto com 50% de opacidade */
+}
 .contact h2 {
     margin-bottom: 20px;
     font-size: 28px;
-    color: #000000;
+    color: #f4f3f3;
     font-weight: bold;
 }
 
@@ -207,7 +215,7 @@ nav ul li a:hover {
     display: block;
     margin-bottom: 10px;
     font-size: 18px;
-    color: #010101;
+    color: #fefefe;
     font-weight: bold;
 }
 
